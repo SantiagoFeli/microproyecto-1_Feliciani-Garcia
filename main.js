@@ -88,6 +88,13 @@ window.setInterval(function() {
 	}
 }, 750);
 
+function restartGame() {
+	victorias = 0;
+	derrotas = 0;
+	game = new Ahorcado();
+	game.updatePageData();
+}
+
 function Ahorcado() {
 	this.listaPalabras = [
 		"preparador",
@@ -134,7 +141,7 @@ Ahorcado.prototype.checkGuess = function(char) {
 	if (!isInWord) {
 		this.errors++;
 	}
-
+	
 	if (this.errors >= maxErrores) {
 		derrotas++;
 		this.alertLines = perdiste;
@@ -144,6 +151,7 @@ Ahorcado.prototype.checkGuess = function(char) {
 	if (!this.visibleLetters.includes(false)) {
 		victorias++;
 		this.alertLines = ganaste;
+		this.listaPalabras = this.listaPalabras.filter(word => word !== this.palabra);
 		this.gameOver = true;
 	}
 
