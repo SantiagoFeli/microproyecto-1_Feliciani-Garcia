@@ -1,9 +1,6 @@
 body {
 	position: relative;
 	background-color: #000000;
-}
-
-body {
 	font-family: "Courier New", Courier, monospace;
 	color: #2bb7ee;
 }
@@ -20,8 +17,9 @@ body {
 }
 
 #main-content {
-	width: 960px;
-	margin: 0px auto 0px auto;
+	width: 100%; 
+	max-width: 960px; 
+	margin: 0 auto; 
 }
 
 .panel {
@@ -45,13 +43,26 @@ body {
 #restart-button {
 	text-align: center;
 	font-size: 18px;
-	padding: 10px 20px;
+	padding: 10px 12px;
 	background-color: #000000;
 	color: #2bb7ee;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
 	font-family: "Courier New", Courier, monospace;
-	
 }
 
+
+@media screen and (max-width: 600px) {
+	#word-display {
+		font-size: 24px; 
+	}
+
+	#general-display {
+		font-size: 14px; 
+	}
+
+	#restart-button {
+		font-size: 16px; /
+	}
+}
