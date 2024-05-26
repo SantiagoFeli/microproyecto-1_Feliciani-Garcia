@@ -88,6 +88,12 @@ window.setInterval(function() {
 	}
 }, 750);
 
+function restartGame() {
+	victorias = 0;
+	derrotas = 0;
+	game = new Ahorcado();
+	game.updatePageData();
+}
 function Ahorcado() {
 	this.listaPalabras = [
 		"preparador",
