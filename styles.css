@@ -3,44 +3,44 @@ body {
 	background-color: #000000;
 	font-family: "Courier New", Courier, monospace;
 	color: #2bb7ee;
-}
-
-#title {
+  }
+  
+  #title {
 	text-align: center;
 	margin-top: 20px;
 	margin-bottom: 30px;
-}
-
-#instruction, #alerts {
+  }
+  
+  #instruction, #alerts {
 	text-align: center;
 	font-size: 12px;
-}
-
-#main-content {
+  }
+  
+  #main-content {
 	width: 100%; 
 	max-width: 960px; 
 	margin: 0 auto; 
-}
-
-.panel {
+  }
+  
+  .panel {
 	background-color: #000000;
 	padding: 20px;
 	margin: 10px;
-}
-
-#word-display {
+  }
+  
+  #word-display {
 	text-align: center;
 	font-size: 32px;
 	padding: 10px;
 	padding-bottom: 20px;
-}
-
-#general-display {
+  }
+  
+  #general-display {
 	text-align: center;
 	font-size: 16px;
-}
-
-#restart-button {
+  }
+  
+  #restart-button {
 	text-align: center;
 	font-size: 18px;
 	padding: 10px 12px;
@@ -50,19 +50,56 @@ body {
 	border-radius: 5px;
 	cursor: pointer;
 	font-family: "Courier New", Courier, monospace;
-}
-
-
-@media screen and (max-width: 600px) {
+  }
+  
+  /* Tablet landscape (768px - 1024px) */
+  @media screen and (max-width: 1024px) {
 	#word-display {
-		font-size: 24px; 
+	  font-size: 28px;
 	}
-
 	#general-display {
-		font-size: 14px; 
+	  font-size: 14px;
 	}
-
 	#restart-button {
-		font-size: 16px; /
+	  font-size: 16px;
 	}
-}
+  }
+  
+  /* Tablet portrait (480px - 768px) */
+  @media screen and (max-width: 768px) {
+	#word-display {
+	  font-size: 24px;
+	}
+	#general-display {
+	  font-size: 12px;
+	}
+	#restart-button {
+	  font-size: 14px;
+	}
+  }
+  
+  /* Mobile landscape (320px - 480px) */
+  @media screen and (max-width: 480px) {
+	#word-display {
+	  font-size: 20px;
+	}
+	#general-display {
+	  font-size: 10px;
+	}
+	#restart-button {
+	  font-size: 12px;
+	}
+  }
+  
+  /* Mobile portrait (less than 320px) */
+  @media screen and (max-width: 320px) {
+	#word-display {
+	  font-size: 18px;
+	}
+	#general-display {
+	  font-size: 9px;
+	}
+	#restart-button {
+	  font-size: 10px;
+	}
+  }
