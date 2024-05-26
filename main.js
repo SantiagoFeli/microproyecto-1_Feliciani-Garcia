@@ -90,24 +90,24 @@ window.setInterval(function() {
 
 function Ahorcado() {
 	this.listaPalabras = [
-		"asphyxiation",
-		"justice",
-		"death",
-		"fading",
-		"punishment",
-		"sentence",
-		"execution",
-		"unjust",
-		"struggle",
-		"throat",
-		"trachea",
-		"breathing",
-		"oxygen",
-		"gasping",
-		"suffering",
-		"spectators",
-		"gallows",
-		"powerless"
+		"preparador",
+		"profesor",
+		"estudiante",
+		"palabra",
+		"escritorio",
+		"celular",
+		"prueba",
+		"bolso",
+		"cartera",
+		"termo",
+		"lapiz",
+		"cuaderno",
+		"libro",
+		"materia",
+		"preparaduria",
+		"proyecto",
+		"metropolitana",
+		"universidad"
 	]
 
 	this.palabra = this.listaPalabras[Math.floor(Math.random() * this.listaPalabras.length)];
