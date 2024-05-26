@@ -100,7 +100,7 @@ function Ahorcado() {
 		"preparador",
 		"profesor",
 		"estudiante",
-		"palabra",
+		"calculadora",
 		"escritorio",
 		"celular",
 		"prueba",
